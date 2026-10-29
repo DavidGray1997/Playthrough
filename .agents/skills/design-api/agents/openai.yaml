@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Design"
+  short_description: "Draft reviewable API contract designs"
+  default_prompt: "Use $design-api to draft or update the API design for this initiative."

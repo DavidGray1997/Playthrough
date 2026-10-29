@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Delivery Backlog"
+  short_description: "Create traceable stories and technical tasks"
+  default_prompt: "Use $write-backlog to create or update the delivery backlog for this initiative."

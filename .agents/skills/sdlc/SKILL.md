@@ -1,0 +1,58 @@
+---
+name: sdlc
+description: Coordinate a documented software-development initiative through requirements, design, build, and release, including phase questions, assumptions, and reconciliation of answers. Use when setting up, assessing, or advancing SDLC records; use specialist skills for the actual deliverables.
+---
+
+# SDLC coordinator
+
+Read [the shared document contract](references/document-contract.md) at the start of **every** run. It governs paths, IDs, evidence, approvals, traceability, and checkpoints. Then inspect the relevant project records before proposing or making changes.
+
+Before committing, pushing, opening or updating a pull request, or merging, follow the [Git workflow skill](../git-workflow/SKILL.md). SDLC planning and implementation approvals do not by themselves authorize publication.
+
+## Route the work
+
+Resolve the project root, initiative, existing conventions, the requested change, and its current evidence. Keep the documentation proportional: a substantial feature or release normally needs the full initiative record; a small change may remain in its existing story.
+
+Create or revise lifecycle files only at a canonical path defined here or in the shared contract, or at an explicitly linked established equivalent. Do not create ad hoc handoff, status, summary, or next-steps files. Put handoff information in the relevant lifecycle records and the task report.
+
+Use this map for the canonical record or the project’s explicitly linked equivalent:
+
+| Stage | Record | Specialist skill |
+| --- | --- | --- |
+| Requirements | `requirements/prd.md` | [write-prd](../write-prd/SKILL.md) |
+| Requirements | `requirements/decisions.md` | [record-decision](../record-decision/SKILL.md) |
+| Requirements | `requirements/questions.md` | [resolve-questions](../resolve-questions/SKILL.md) |
+| Design | `design/domain-model.md` | [design-domain](../design-domain/SKILL.md) |
+| Design | `design/ux-design.md`, optional `design/design-language.md` | [design-ux](../design-ux/SKILL.md) |
+| Design | `design/architecture-design.md` | [design-architecture](../design-architecture/SKILL.md) |
+| Design | `design/api-design.md` | [design-api](../design-api/SKILL.md) |
+| Design | `design/database-design.md` and optional schema/ERD records | [design-database](../design-database/SKILL.md) |
+| Design | `design/decisions.md` | [record-decision](../record-decision/SKILL.md) |
+| Design | `design/questions.md` | [resolve-questions](../resolve-questions/SKILL.md) |
+| Build | `build/delivery-backlog.md` | [write-backlog](../write-backlog/SKILL.md) |
+| Build | `build/verification-record.md` | [record-verification](../record-verification/SKILL.md) |
+| Build | `build/decisions.md` | [record-decision](../record-decision/SKILL.md) |
+| Build | `build/questions.md` | [resolve-questions](../resolve-questions/SKILL.md) |
+| Release | `release/release-record.md` | [record-release](../record-release/SKILL.md) |
+| Release | `release/decisions.md` | [record-decision](../record-decision/SKILL.md) |
+| Release | `release/questions.md` | [resolve-questions](../resolve-questions/SKILL.md) |
+
+Read the selected specialist skill before carrying out its work. If it is unavailable, still preserve the contract and report the missing capability; do not replace it with invented approval or evidence.
+
+For delivery backlogs, use write-backlog’s [compact user-story and technical-task templates](../write-backlog/assets/delivery-backlog.md). Keep each item to one outcome, a short summary, essential links/dependencies, and observable criteria or checks; link supporting detail rather than repeating it.
+
+Use [resolve-questions](../resolve-questions/SKILL.md) to capture questions and assumptions, list unresolved items for an initiative or phase, guide the user through answers when requested, and reconcile new answers across concerned skills. Listing ends with an offer to guide resolution; an answer or assumption approval triggers reconciliation in the same workflow. Keep all tracking in phase `questions.md` files, with links from affected records.
+
+## Coordinate checkpoints
+
+Make the next useful action concrete. Requirements need product-owner approval before detailed design; changes to core domain rules, journeys, security, or deployment need design review; a delivered slice needs demonstrated criteria, relevant passing checks, needed review and operational/documentation work, and product-owner acceptance. Release planning is distinct from releasing.
+
+Treat the user's requested work as the current unit of delivery. Continue it within the authorized scope until its stated completion conditions are met, the user changes or stops it, or a concrete blocker prevents further progress. Do not stop after partial implementation, planning, or documentation and describe the unfinished portion merely as a later "next action." When blocked, report the work as incomplete, identify the unmet completion condition and blocker, and name the specific action needed to resume. A next useful action follows completed requested work or resolves a clearly reported blocker.
+
+Drafting, analysis, and consistency checks may continue while a checkpoint is pending. Label preliminary material and missing evidence accurately. Do not repeatedly seek approval already given within its stated scope; ask only when an unresolved approval or fact blocks a dependent action.
+
+When setting up a new initiative, copy and adapt [the portable SDLC template](assets/sdlc.md) to `docs/sdlc.md` only when the project has no equivalent lifecycle guide. Scaffold `decisions.md` and `questions.md` in all four phases when creating the initiative structure. Use the [questions template](../resolve-questions/assets/questions.md). Never overwrite established conventions or create a second source of truth.
+
+## Handoff
+
+Before reporting, check that records use canonical or linked established paths, cross-links resolve, IDs were preserved, decisions show authority/status, and requirements connect to stories, evidence, and release outcomes as applicable. Do not create a separate handoff artifact for this report. Report changed records, the completion status of the requested work, current stage, unmet checkpoints, and the next usable action. If the requested work is incomplete, state that before listing any next action.

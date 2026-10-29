@@ -1,0 +1,6 @@
+interface:
+  display_name: "Release Record"
+  short_description: "Record release readiness, outcomes, and follow-up"
+  default_prompt: "Use $record-release to prepare or update this initiative’s release record."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write PRD"
+  short_description: "Create testable product requirements documents"
+  default_prompt: "Use $write-prd to draft or update the PRD for this initiative."

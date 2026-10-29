@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Design"
+  short_description: "Draft journeys, states, and accessible UX"
+  default_prompt: "Use $design-ux to draft or update the UX design for this initiative."

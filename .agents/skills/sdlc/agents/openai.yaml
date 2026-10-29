@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Coordinator"
+  short_description: "Coordinate a documented SDLC initiative"
+  default_prompt: "Use $sdlc to set up or advance this initiative through the documented SDLC."
