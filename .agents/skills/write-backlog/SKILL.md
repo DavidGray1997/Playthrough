@@ -47,3 +47,9 @@ Use Review notes for unresolved design, evidence gaps, assumptions, changes to s
 ## Check before handoff
 
 Verify story/task ID stability and sequence, each story/task shape, concise wording without lost scope, numbered criteria and completion checks, non-circular dependencies, PRD coverage, decision references, and accurate status. Report missing readiness evidence or acceptance evidence as distinct next actions.
+
+## Offer issue publication
+
+After preparing and checking a new backlog, or a material revision to its stories/tasks, ask whether the user wants the reviewed items raised in an issue tracker. Suggest GitHub Issues without making it mandatory: “Would you like me to create these stories and tasks as GitHub issues, or use another tracker?” Refer to the prepared backlog so the proposed scope is concrete. If a tracker is already agreed, use that destination in the offer instead.
+
+This offer is not authorization to publish. Respect an earlier decline for the same scope; if issue creation is already explicitly authorized, proceed within that scope rather than asking again. Resolve the target repository/tracker from context and ask only for missing details. For authorized publication, preserve story/task IDs and criteria, check for existing matching issues to avoid duplicates, and record resulting issue links against the local backlog items. Do not infer permission to commit, push, or publish unrelated work.
