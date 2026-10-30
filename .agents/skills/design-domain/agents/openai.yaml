@@ -1,0 +1,4 @@
+interface:
+  display_name: "Domain Model"
+  short_description: "Draft reusable domain-model design records"
+  default_prompt: "Use $design-domain to draft or update the domain model for this initiative."

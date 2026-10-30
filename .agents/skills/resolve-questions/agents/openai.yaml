@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Questions and Assumptions"
+  short_description: "Track questions and reconcile answers across SDLC records"
+  default_prompt: "Use $resolve-questions to list open questions and assumptions for my initiative, then offer to guide me through resolving them."

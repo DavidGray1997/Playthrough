@@ -1,0 +1,6 @@
+interface:
+  display_name: "Database Design"
+  short_description: "Design a portable, verifiable data model"
+  default_prompt: "Use $design-database to design or update this initiative’s database records."
+policy:
+  allow_implicit_invocation: true

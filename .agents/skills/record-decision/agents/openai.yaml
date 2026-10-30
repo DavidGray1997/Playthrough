@@ -1,0 +1,4 @@
+interface:
+  display_name: "Record SDLC Decision"
+  short_description: "Maintain attributable SDLC decision records"
+  default_prompt: "Use $record-decision to record this requirements, design, build, or release decision."
