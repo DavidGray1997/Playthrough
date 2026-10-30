@@ -12,3 +12,5 @@ The repository includes the personal SDLC skill suite in [`.agents/skills`](.age
 - Git delivery and privacy checks: `git-workflow`.
 
 Each skill includes its instructions and available templates, references and agent metadata. Lifecycle records use the portable `docs/initiatives/<initiative>/` structure described by the skills.
+
+Generated lifecycle records stay local: `.gitignore` excludes `docs/sdlc.md` and `docs/initiatives/`, including generated design assets. The reusable skill instructions and templates remain tracked.
