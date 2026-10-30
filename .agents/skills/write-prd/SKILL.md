@@ -9,6 +9,8 @@ Read [the shared document contract](references/document-contract.md) at the star
 
 Read relevant phase `questions.md` entries before drafting. Use [resolve-questions](../resolve-questions/SKILL.md) to record newly raised questions and unconfirmed assumptions, link their owning entries from this record, and reconcile answers through the concerned skills. The shared contract governs timestamps, raising/concerned skills, options, response history, and reconciliation status.
 
+Use the [current-phase interview guardrail](../resolve-questions/SKILL.md#keep-the-interview-within-the-current-phase) to distinguish unresolved product choices from design/operations details. When the requirements queue is exhausted, consolidate the PRD and present reviewable content for product-owner approval; report remaining evidence blockers and deferred details separately.
+
 ## Choose the record and scope
 
 Use the established PRD path or `docs/initiatives/<initiative>/requirements/prd.md`. Keep one PRD for a substantial feature or release; add a focused story update for a small change unless a separate PRD is needed to avoid ambiguity. Preserve existing useful structure and references. Never import the source project’s domain rules, stack, terminology, styling, duration, metrics, approvals, or test outcomes.

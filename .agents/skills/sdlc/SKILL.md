@@ -43,6 +43,8 @@ For delivery backlogs, use write-backlog’s [compact user-story and technical-t
 
 Use [resolve-questions](../resolve-questions/SKILL.md) to capture questions and assumptions, list unresolved items for an initiative or phase, guide the user through answers when requested, and reconcile new answers across concerned skills. Listing ends with an offer to guide resolution; an answer or assumption approval triggers reconciliation in the same workflow. Keep all tracking in phase `questions.md` files, with links from affected records.
 
+Apply the [current-phase interview guardrail](../resolve-questions/SKILL.md#keep-the-interview-within-the-current-phase) before extending a requirements interview. Keep a finite queue of owner decisions, route delivery mechanisms to design/operations, and consolidate the PRD for its normal approval checkpoint when substantive requirements choices are exhausted.
+
 ## Coordinate checkpoints
 
 Make the next useful action concrete. Requirements need product-owner approval before detailed design; changes to core domain rules, journeys, security, or deployment need design review; a delivered slice needs demonstrated criteria, relevant passing checks, needed review and operational/documentation work, and product-owner acceptance. Release planning is distinct from releasing.
